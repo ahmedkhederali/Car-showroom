@@ -1,0 +1,2 @@
+publisher key in strip====> for frontend
+secret key in strip ===> fro backend

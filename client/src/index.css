@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
+  background-color: azure;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/*
+bs1 ==> Box Shadow One 
+*/
+.bs1{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.spinner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 30px;
+  color: orangered;
+}
+.header{
+  padding: 10px;
+}
+.content{
+  min-height: 90vh;
+}
+
+a{
+  color: #1890ff;
+}
+a:hover{
+  color: #1890ff;
+}
+.ant-btn,
+.ant-btn:hover{
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(28, 184, 65);
+}
+
+/*--------------------------style of car card----------------*/
+.car{
+  margin-top: 100px;
+  background-color: rgb(18, 79, 194);
+  height: 160px;
+  cursor: pointer;
+}
+.car:hover{
+  height: 220px;
+  transition: 0.3s;
+}
+.car:hover .car-content{
+  transform: translateY(-20px);
+  opacity: 1;
+  transition: 0.7s;
+}
+.carImg{
+  height: 150px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  transform: translateY(-40px);
+}
+.car-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(-150px);
+  opacity: 0;
+}
+.car-content .car_desc p:first-child{
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  font-size: 19px;
+  font-weight: 700;
+  margin: 3px;
+}
+.car-content .car_desc mark{
+  color: crimson;
+}
+.car-content button{
+  background-color: rgb(155, 3, 48);
+  padding: 5px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+/*-------------------------------------LoGIN Page--------------*/
+.login{
+  background-color: black;
+ 
+}
+.image_logo{
+  position: relative;
+}
+.image_logo h1{
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  letter-spacing: 6px;
+  color: #212424;
+  animation: fadeInLeftBig 1s ease-in-out;
+}
+.image_login{
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  
+}
+
+.col_style{
+  background-color: black;
+}
+.login_form{
+  background-color: #12100e;
+  margin-top: 100px;
+  border-radius: 10px;
+  animation: fadeInLeftBig 1s ease-in-out;
+}
+
+.login_form label,
+.login_form h1{
+  color: rgb(243, 243, 243) !important;
+  opacity: 0.8;
+  font-weight: bold;
+  width: 100%;
+}
+.login_form .btn_login{
+  outline: none;
+  border: none;
+  border: 1px solid #017e84;
+  background:transparent;
+  color: #fff;
+  padding: 10px 15px;
+  text-transform: capitalize;
+  letter-spacing: 1.6px;
+  margin-top: 10px;
+  width: 150px;
+}
+
+.login_form .btn_login:hover{
+  animation: bounceIn .75s ease-in-out;
+  background-color: #017e84;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.form_descr {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.form_descr span{
+  color: #fff;
+}
+.form_descr p:last-child{
+  color: #017e84
+}
+.form_descr p:hover{
+  color: rgb(53, 15, 187);
+}
+
+
+/*---------------------------booking car------------*/
+.img-space-car{
+  margin-right: 20px;
+}
+.imgCar2{
+  height: 400px;
+  width: 640px;
+ 
+}
+.totalPerHour{
+  color: #555;
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 7px;
+  font-weight: 800;
+}
+.btn_bokking{
+  padding: 10px 25px;
+  border: none;
+  outline: none;
+  border: 3px solid rgb(187, 102, 102);
+  background: transparent;
+  color: #d50606;
+  font-weight: 600;
+  letter-spacing: 2px;
+ 
+}
+.btn_bokking:hover{
+  background-color: #f00;
+  color: #fff;
+  transition:all 1s ease-in-out;
+  border-color: #fff;
+ 
+}
+
+
+.row_bookings > div{
+  background-color: rgb(26, 24, 24);
+  margin: 10px;
+  color: #fff;
+  padding: 10px;
+}
+.carImg2{
+  height: 150px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+
+.btn_addcar{
+  padding: 10px 25px;
+  border: none;
+  outline: none;
+  border: 1px solid #f00;
+  background: transparent;
+  color: #d50606;
+  font-weight: 600;
+  letter-spacing: 2px;
+ 
+}
+.btn_addcar:hover{
+  background-color: green;
+  transition: all 0.5s ease-in-out;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+svg{
+  height: 20px !important;
+  width: 20px !important;
+}
+.anticon-edit{
+  color: rgb(255, 255, 255);
+}
+
+.anticon-delete{
+  color: rgb(214, 16, 16);
+}
+/*--------------------------profile-------------*/
+
+
+.profile {
+  background: white;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.profile .profile-header {
+  background: #ff4e50;
+  background: -webkit-linear-gradient(to right, #f9d423, #ff4e50);
+  background: linear-gradient(to right, #f9d423, #ff4e50);
+  display: flex;
+  flex: 1;
+  padding: 30px;
+  flex-direction: column;
+  border: 100px solid #333;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-radius: 0 0 30%;
+  box-shadow: 3px 5px 7px 3px #777;
+}
+.profile .profile-header .profile-info {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-self: space-around;
+  flex-direction: column;
+}
+.profile .profile-header .profile-info .profile-img {
+  justify-content: center;
+  align-self: center;
+}
+.profile .profile-header .profile-info .profile-img img {
+  border: 3px solid #fff;
+  box-shadow: 0px 4px 4px 5px #888;
+  border-radius: 50%;
+}
+.profile .profile-header .profile-info .profile-img .status {
+  background: #eee;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  display: flex;
+  position: relative;
+  top: -60px;
+  right: -195px;
+  border: 3px solid white;
+}
+.profile .profile-header .profile-info .profile-img .status.active {
+  background: green;
+}
+.profile .profile-header .profile-info .profile-username {
+  justify-content: center;
+  align-self: center;
+  font-size: 35px;
+  letter-spacing: 3px;
+  color: white;
+  text-align: center;
+}
+.profile .profile-header .profile-info .profile-skill {
+  justify-content: center;
+  align-self: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #efefef;
+  margin-top: -19px;
+}
+.profile .profile-header .actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.profile .profile-header .actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background: #fff;
+  font-weight: 600;
+  font-size: 23px;
+  margin: 0 5px;
+}
+.profile .profile-header .actions button.btn-success {
+  color: white;
+  background: #0b8;
+}
+.profile .profile-content {
+  padding: 5px;
+  border-left: 2px solid #eee;
+}
+.fa-star.checked {
+  color: gold;
+}
+.resposive {
+  width: 30vw;
+  min-width: 500px;
+}
+.profile_delete{
+  background-color: #d50606 !important;
+  color: #fff;
+}
+@media only screen and (max-width: 800px) {
+  .resposive {
+    width: 100vw;
+ }
+}
